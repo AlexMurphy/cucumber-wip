@@ -6,4 +6,4 @@ Feature: Store
 		When I select sim
 		And I select mobile sim
 		And I select a 2GB plan with a micro sim
-		# Then my selection is displayed in the basket
+		Then my selection is displayed in the basket

@@ -4,10 +4,16 @@ require 'selenium-webdriver'
 require 'site_prism'
 require 'active_support'
 require "rspec"
+require 'mysql2'
 
 # The below active support entry ensures that all files in the 'lib' foolder are autoloaded as part of a program run
 # information on ActiveSupport can be found here in regards to rails applications (although it provides a useful guide)
 # here is the link to the rubydoc information on the ActiveSupport::Dependencies - http://www.rubydoc.info/docs/rails/2.3.8/ActiveSupport/Dependencies
+
+BROWSER = "firefox"
+TESTENV = "staging"
+
+METRICS_CONFIG_FILE = File.expand_path("config/metrics.yml")
 
 Selenium::WebDriver::Chrome::Service.executable_path = 'C:\chromedriver.exe'
 
